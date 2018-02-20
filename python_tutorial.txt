@@ -1,0 +1,91 @@
+######################################################################################################################################
+Do not need to declare variables before using them, or declare their type. Every variable in Python is an object.
+
+Variables AND TYPES
+Python is completely object oriented.Do not need to declare variables before using them, or declare their type
+
+Integer
+myint = 7 
+Float
+myfloat = 7.0 
+myfloat = float(7) 
+Strings
+mystring = 'hello'
+mystring = "hello" (double quotes is better becoz its easy to include apostrophes(Dont'))
+
+one = 1
+two = 2
+three = one + two
+
+hello = "hello"
+world = "world"
+helloworld = hello + " " + world
+a, b = 3, 4
+print one + two + hello (Mixing operators between numbers and strings is not supported:)
+
+# change this code
+mystring = "hello"
+myfloat = 10.0
+myint = 20
+
+# testing code
+if mystring == "hello":
+    print "String: %s" % mystring
+if isinstance(myfloat, float) and myfloat == 10.0:
+    print "Float: %d" % myfloat
+
+######################################################################################################################################
+
+LISTS
+
+Lists are very similar to arrays. They can contain any type of variable, and they can contain as many variables as you wish
+
+mylist = [1,2,3,4]
+for x in mylist:
+    print x
+
+
+numbers = []
+numbers.append(1)
+numbers.append(2)
+numbers.append(3)
+strings = []
+strings.append("hello")
+strings.append("world")
+names = ["John", "Eric", "Jessica"]
+
+# write your code here
+second_name = "Eric"
+
+
+# this code should write out the filled arrays and the second name in the names list (Eric).
+print(numbers)
+print(numbers[2])
+print(strings)
+print("The second name on the names list is %s" % second_name)
+print(names)
+print("the values of names are" + names) (Cannot be done cant append string with list objects)
+
+#####################################################################################################################################
+Basic Operators
+
+squared = 7 ** 2 (7 * 7)
+lotsofhellos = "hello" * 10 (print hello 10 times)
+a=[1,2,3]
+b=[11,12,13]
+print a+b
+
+x = object()
+y = object()
+# TODO: change this code
+x_list = [x] * 10
+y_list = [y] * 10
+big_list = [x,y] * 10
+print "x_list contains %d objects" % len(x_list)
+print "y_list contains %d objects" % len(y_list)
+print "big_list contains %d objects" % len(big_list)
+# testing code
+if x_list.count(x) == 10 and y_list.count(y) == 10:
+    print "Almost there..."
+if big_list.count(x) == 10 and big_list.count(y) == 10:
+    print "Great!"
